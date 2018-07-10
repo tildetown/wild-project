@@ -1,0 +1,2 @@
+#!/usr/bin/perl
+for my $j (qx/ls/){$j=~s/\R//g;my $J=$j;$J=~s+^.+j+;print qx/mv $j $J/ }
